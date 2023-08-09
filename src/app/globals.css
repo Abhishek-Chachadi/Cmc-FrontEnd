@@ -2,26 +2,151 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+/* globals.css or NavigationBar.module.css */
+.horizontal-navbar {
+    align-items: center; /* Align items vertically in the center */
+    background-color: #333;
+    padding: 10px 10px;
   }
-}
+  
+  .navbar-list {
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    padding: 10px 10px 10px 10px;
+    align-items: center;
+    
+  }
+  
+  .navbar-item {
+    margin-right: 20px;
+    color: white;
+    align-items: end;
+    justify-content: space-between;
+  }
+  
+  .navbar-item:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+  }
+  
+  /* Style the links */
+  .navbar-item a {
+    text-decoration: none;
+    color: lightblue;
+    border-style: double;
+    border-color:white;
+  }
+  
+  /* Style the "Sign In" button */
+  .navbar-item Button {
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+  }
+  .navbar-header{
+    display: flex;
+    justify-content: start;
+    float: left; 
+    color: lightblue;
+    font-size: 20px;
+    padding: 10px;
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  }
+  .button{
+    background-color: lightblue;
+    padding:20px;
+    border-radius: 15px;
+    box-shadow: 0 8px #999;
+    cursor:pointer
+  }
+
+  .button:hover {background-color: lightseagreen}
+
+  .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  .button-sign{
+    background-color: lightblue;
+    padding:15px;
+    border-radius: 15px;
+    cursor:pointer
+  }
+
+  .data-list{
+    list-style: none;
+    padding: 10px;
+  }
+
+  .Table{
+    background-color: #888;
+    padding: 10px;
+    border-radius: 15px;
+    padding: auto;
+    margin: 20px;
+    width: auto;
+    display: flex;
+
+  }
+
+  .Table-header{
+    background-color: #777;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+    border-radius: 15px;
+
+  }
+
+  .Table-column{
+    background-color: #777;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+  }
+
+  .Table-body{
+    align-items: end;
+    justify-content: center;
+    align-content: center;
+    border-radius: 15px;
+    padding:10px;
+    margin:5px 
+  }
+
+  form{
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 15px;
+    border-radius: 10px;
+    width:80%;
+    margin: 20px auto;
+    background-color: lightblue;
+  }
+
+  input{
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    width:15%;
+  }
+
+  .button1{
+    background-color: lightgrey;
+    padding:10px;
+    border-radius: 15px;
+    margin: 20px;
+    box-shadow: 0 8px #999;
+    cursor:pointer
+  }
+
+  .button1:hover {background-color: darkgray}
+
+  .button1:active {
+    background-color: darkgray;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  
